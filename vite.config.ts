@@ -12,6 +12,30 @@ const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(file
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react()],
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'DammiFalastini',
+      fileName: 'index',
+      formats: ['es', 'cjs']
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        },
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith('.svg')) {
+            return 'assets/[name][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        }
+      }
+    },
+    assetsInlineLimit: 0
+  },
   test: {
     projects: [{
       extends: true,
@@ -31,7 +55,7 @@ export default defineConfig({
             browser: 'chromium'
           }]
         },
-        setupFiles: ['.storybook/vitest.setup.js']
+        setupFiles: ['.storybook/vitest.setup.ts']
       }
     }]
   }
