@@ -4,6 +4,7 @@ import PopUpFlag from './PopUpFlag';
 
 const meta = {
   component: PopUpFlag,
+  tags: ['autodocs'],
 } satisfies Meta<typeof PopUpFlag>;
 
 export default meta;

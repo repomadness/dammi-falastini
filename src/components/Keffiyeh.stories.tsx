@@ -4,6 +4,7 @@ import Keffiyeh from './Keffiyeh';
 
 const meta = {
   component: Keffiyeh,
+  tags: ['autodocs'],
 } satisfies Meta<typeof Keffiyeh>;
 
 export default meta;
@@ -19,5 +20,11 @@ export const Default: Story = {
 export const Transparent: Story = {
   args: {
     transparent: true
+  }
+};
+
+export const CustomDesignColor: Story = {
+  args: {
+    designColor: 'red'
   }
 };

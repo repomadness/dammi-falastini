@@ -4,6 +4,7 @@ import SlideInFlag from './SlideInFlag';
 
 const meta = {
   component: SlideInFlag,
+  tags: ['autodocs'],
 } satisfies Meta<typeof SlideInFlag>;
 
 export default meta;

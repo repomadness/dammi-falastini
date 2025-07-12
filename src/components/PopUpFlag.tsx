@@ -1,4 +1,3 @@
-import React from 'react';
 import PalFlagImg from '../assets/pal-heart-portrait.svg';
 import { motion } from 'motion/react';
 import { Breakpoint, useBreakpoint } from '../utils/useBreakpoint';

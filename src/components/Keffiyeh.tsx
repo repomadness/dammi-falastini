@@ -1,10 +1,11 @@
-import KeffiyehImg from '../assets/keffiyeh.svg';
-import KeffiyehTransparentImg from '../assets/keffiyeh-transparent.svg';
+import KeffiyehSVG from '../assets/keffiyeh.tsx';
 import {Breakpoint, useBreakpoint} from '../utils/useBreakpoint';
 
 export interface KeffiyehProps {
   scale?: number;
   transparent?: boolean;
+  designColor?: string;
+  backgroundColor?: string;
 }
 
 const getSize = (breakpoint: Breakpoint) => {
@@ -29,7 +30,7 @@ const getSize = (breakpoint: Breakpoint) => {
       return 300;
   }
 }
-const Keffiyeh = ({scale = 1, transparent = false}: KeffiyehProps) => {
+const Keffiyeh = ({scale = 1, transparent = false, designColor = "black", backgroundColor = "white"}: KeffiyehProps) => {
   const breakpoint = useBreakpoint();
   const size = `${getSize(breakpoint) * scale}px`;
 
@@ -44,15 +45,11 @@ const Keffiyeh = ({scale = 1, transparent = false}: KeffiyehProps) => {
       width: '100%',
       height: 'auto'
     }}>
-      <img 
-        src={transparent ? KeffiyehTransparentImg : KeffiyehImg} 
-        alt="Keffiyeh" 
-        style={{
+        <KeffiyehSVG style={{
           maxWidth: '100%',
           height: 'auto',
           width: size
-        }}
-      />
+        }} designColor={designColor} backgroundColor={transparent ? "transparent" : backgroundColor} />
     </div>
   );
 };
