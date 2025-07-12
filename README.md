@@ -6,7 +6,7 @@ A lightweight, expressive React component library of corner banners and pop-ups 
 
 > This isn't the Palestinian flag. Palestine isn't a country for it to have a flag. Palestine is a condition. Every Arab is a Palestinian. Every poor man who carries a gun is a Palestinian. Palestine is the condition of us all.
 >
-> - Elias Khoury
+> <cite>- Elias Khoury</cite>
 
 ## overview
 
