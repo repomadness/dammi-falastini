@@ -1,4 +1,4 @@
-# dammi falastini project
+# dammi falastini project 🇵🇸
 
 A lightweight, expressive React component library of corner banners and pop-ups for sites to express their solidarity with Palestine.
 
@@ -6,7 +6,7 @@ A lightweight, expressive React component library of corner banners and pop-ups 
 
 > This isn't the Palestinian flag. Palestine isn't a country for it to have a flag. Palestine is a condition. Every Arab is a Palestinian. Every poor man who carries a gun is a Palestinian. Palestine is the condition of us all.
 >
-> <cite>- Elias Khoury</cite>
+> <cite>- Elias Khoury 🇱🇧 (Little Mountain)</cite>
 
 ## overview
 
@@ -18,9 +18,13 @@ Whether you're building a blog, portfolio, product site, or platform, these comp
 
 Visibility matters, especially in the face of injustice. As a Lebanese engineer, the Palestinian cause is deeply personal as it's impacted all aspects of my life. It's embedded in our emotions, our history, and our culture. Like most in Lebanon, I grew up with an awareness of the struggle for Palestinian liberation that was undeniable, as the echoes of war, displacement, and resistance are an integral part of the Lebanese collective memory.
 
-This library is a very small act of solidarity to help make visible what is often erased, silenced, or forgotten. By building tools that allow people to publicly, creatively, and proudly express support for the brotherly Palestinian people, I hope to encourage others to contribute to a broader culture of empathy, humanity, resistance, and unwavering commitment to justice.
+This library is a very small act of solidarity to help make visible what is often erased, silenced, or forgotten. By building tools that allow people to publicly, creatively, and proudly express support for the brotherly Palestinian people, I hope to encourage others to contribute to a broader culture of empathy, humanity, and resistance, abandoning silence for an unwavering commitment to justice.
 
 Use whatever skills you have to stand with the oppressed until we're all standing. Please fork, adapt, and remix with the utmost love and without an ounce of fear.
+
+> We have on this earth what makes life worth living.
+>
+> <cite>- Mahmoud Darwish 🇵🇸 (On This Land)</cite>
 
 ## tech stack
 
