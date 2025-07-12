@@ -3,9 +3,13 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-slate: #242424;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-white);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -65,4 +69,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+html[data-theme="dark"] {
+  background-color: var(--color-slate);
 }
