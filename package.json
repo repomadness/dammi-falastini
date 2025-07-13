@@ -2,7 +2,7 @@
   "name": "@repomadness/dammi-falastini",
   "description": "Dammi Falastini Project - a library of phantom limb components",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Sukaina Bahsoun",
   "license": "MIT",
   "type": "module",
@@ -22,7 +22,6 @@
     "page peel",
     "animation"
   ],
-  
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
