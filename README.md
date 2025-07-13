@@ -117,6 +117,43 @@ npm install
 npm run storybook
 ```
 
+### releasing a new version
+
+This project uses a manual release process via git tags and GitHub Actions. When a new tag is pushed, the `release.yml` workflow will automatically run in order to publish the package to npm.
+
+1. Bump the package version
+   To bump the version in `package.json`, use `npm version`:
+
+```bash
+npm version # [patch | minor | major]
+
+# Examples
+npm version patch # 1.0.0 -> 1.0.1
+npm version minor # 1.0.1 -> 1.1.0
+npm version major # 1.1.0 -> 2.0.0
+```
+
+This will do the following:
+
+- update `package.json`/`package-lock.json`
+- create a git commit with the version bump
+- create a git tag (ex. `v1.2.0`)
+
+2. Push changes
+   Push the changes and the tag:
+
+```bash
+git push origin main --follow-tags
+```
+
+This will push both the commit with the new version, as well as the associated git tag.
+
+3. Allow GHA to publish
+   Once the tag is published, GHA will run the `release.yml` workflow. This will build the package and publish it to npm.
+
+4. Verify release
+   Check the Actions tab to see if the `release` job was successful. Confirm the new version is live on npm.
+
 ## license
 
 MIT © repomadness

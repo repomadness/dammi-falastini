@@ -1,10 +1,23 @@
 {
   "name": "@repomadness/dammi-falastini",
   "description": "Dammi Falastini Project - a library of phantom limb components",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
   "author": "Sukaina Bahsoun",
+  "license": "MIT",
   "type": "module",
+  "keywords": [
+    "dammi-falastini",
+    "dammi",
+    "falastini",
+    "palestine",
+    "palestinian",
+    "react",
+    "component",
+    "library",
+    "page peel",
+    "animation"
+  ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -58,5 +71,6 @@
   },
   "overrides": {
     "storybook": "$storybook"
-  }
+  },
+  "sideEffects": false
 }
