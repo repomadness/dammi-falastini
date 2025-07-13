@@ -1,4 +1,4 @@
-# dammi falastini project 🇵🇸
+# dammi falastini project 🇵🇸❤️
 
 A lightweight, expressive React component library of corner banners and pop-ups for sites to express their solidarity with Palestine.
 
