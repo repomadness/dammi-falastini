@@ -119,7 +119,7 @@ npm run storybook
 
 ### releasing a new version
 
-This project uses a manual release process via git tags and GitHub Actions. When a new tag is pushed, the `release.yml` workflow will automatically run in order to publish the package to npm.
+This project uses a manual release process via git tags and GitHub Actions. When a new tag is pushed, the `release.yml` workflow will automatically run in order to publish the package to npm. Releases are triggered on semantic version tags.
 
 1. Bump the package version
    To bump the version in `package.json`, use `npm version`:
