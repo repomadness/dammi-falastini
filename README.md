@@ -136,7 +136,6 @@ npm version major # 1.1.0 -> 2.0.0
 This will do the following:
 
 - update `package.json`/`package-lock.json`
-- create a git commit with the version bump
 - create a git tag (ex. `v1.2.0`)
 
 2. Push changes
@@ -156,5 +155,5 @@ This will push both the commit with the new version, as well as the associated g
 
 ## license
 
-MIT © repomadness
+MIT © repomadness <br />
 Silence is a choice - use freely, stand firmly.
